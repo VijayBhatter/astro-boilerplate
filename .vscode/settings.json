@@ -1,0 +1,17 @@
+{
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/public/assets/css",
+        "savePathReplacementPairs": null
+  
+        // More Complex
+  
+        //   "format": "compressed",
+        //   "extensionName": ".min.css"
+      }
+    ],
+    "cSpell.words": ["indiaforums", "stylelint"],
+  }

@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}

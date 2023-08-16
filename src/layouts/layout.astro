@@ -1,0 +1,29 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+import Header from '@layouts/header.astro';
+import Footer from '@layouts/footer.astro';
+
+import '@styles/site.scss';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print" />
+		<title>{title}</title>
+	</head>
+	<body>
+        <Header />
+		<slot />
+        <Footer />
+		<script defer is:inline src="/assets/js/site.js"></script>
+	</body>
+</html>
